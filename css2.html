@@ -1,0 +1,66 @@
+<!--lec15-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <!--Css selectors are of 4 types-->
+    <!--1.element selectors-->
+    <!--2.id selectors-->
+    <!--3.class selectors-->
+    <!--4.grouping element selectors-->
+
+    <!--comments in css /*  */  shortcut:-  text of comment >(then) ctrl+/(forward slash) -->
+    <style>
+
+    /* element selector */
+    p
+    {
+       background-color: black; 
+       
+    }
+
+    /* id selector */
+    #myid
+    {
+      background-color: yellow;
+    }
+
+    /* class selector */
+    .csstwo
+    {
+        color: red;
+    }
+
+    /* class selector */
+    .css2
+    {
+        color: purple;
+    }
+
+    /* grouping element selector */
+    footer, h4
+    {
+        background-color: aqua;
+        color: black;
+        border: 2px solid pink;
+    }
+    
+    </style>
+</head>
+<body>
+<h2>Css Selectors</h2>
+<hr>
+<!--class is denoted as .css2(.classname)-->
+<!--class can be more then one-->
+<!--id is denoted as #myid(#idname)-->
+<!--an id is always unique for every element -->
+<h4> 2ndexample of grouping selector</h4>
+<p class="css2"> element selector example p{ color:red; }</p>
+<span id="myid" class="csstwo">id selector example in above line p(selector), color(property), red(value)</span>   
+<footer>1st example of grouping selector</footer>
+    
+</body>
+</html>

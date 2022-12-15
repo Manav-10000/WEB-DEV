@@ -1,0 +1,32 @@
+<!--lec14-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline, internal and external css demonstaration</title>
+    <!--external css will be shown using another css file by linking it to this file -->
+    <link rel="stylesheet" href="style1.css">  <!--link:css +tab for this tag, it is used to link an external css style sheet to the document -->
+    <!--internal css will be written between  style tag under head-->
+    
+    <style>
+        p{
+            
+            color:black; background-color:orange !important; /*!important give a particular css precedence over other 
+                                                                   css irrespective of the dafault order of precedence */
+            
+        }
+        </style>
+
+<!--internal css is behind inline css in precedence so inline css will always be given precedence f both are written -->
+
+</head>
+ <!--precedence level-- inline>> internal=external(the one which is written downards in the code gets the precedence)-->
+ <body>
+    <!--inline css-->
+<h3>Css Demonstration</h3>
+<P style="color:red; background-color: yellow;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil magni expedita doloribus id distinctio maiores obcaecati<br> officiis minus beatae cum, sed, cupiditate ex debitis dignissimos accusamus voluptates quis ducimus ab?</P>
+</html>
+
+
