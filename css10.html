@@ -1,0 +1,63 @@
+<!--lec23-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color:#122ea6;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;  /*we use this property to restore the property of parent class, and as when we use float the list moves out of scope from parent class so the property of parent class leaves the list with float used on it so in order to restore those propertys we use overflow:auto   */
+        }
+        .navbar li{                
+            float:left;         /*as the unordered list is vertical so to make it vertical and towards left side we use float:left*/
+            list-style: none;   /*as the list had bullets due to being unordered list, so this property id for removing the bullets */
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /*to remove the lines below the linked icons */
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">  <!--<nav> tag is used for big blocks like navigation bar, it acts as kind of like a <div> but better -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
